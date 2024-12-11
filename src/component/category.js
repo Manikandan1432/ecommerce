@@ -6,7 +6,7 @@ const Category=()=> {
     //     useFetch('https://fakestoreapi.com/products/categories')
     //         .then(response=>response.json())
     //         .then((data)=>setData(data))
-    //         .then((error)=>console.error(error))
+    //         .catch((error)=>console.error(error))
     // },[])
     const History=useNavigate()
     const HandleInput=(value)=>{
