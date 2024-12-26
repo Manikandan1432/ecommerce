@@ -1,50 +1,36 @@
-import { useEffect, useState } from 'react';
-import Signin from './signin'
 import{Link} from 'react-router-dom'
-
-// import Signup from './signup'
 function Header() {
-    const [data,setData]=useState([]);
-    const [filterdata,setFilterdata]=useState([]);
-    useEffect(()=>{
-        fetch('https://fakestoreapi.com/products/categories')
-            .then(response=>response.json())
-            .then(data=>setFilterdata(data))
-            .catch(error=>console.error(error))
-    },[])
-    const HandleChange=(value)=>{
-        const result=filterdata.filter(data=>data.toLowerCase().includes(value))
-        setData(result)
-        if(value===''){
-            setData([])
-        }
-    }
-
 
     return(<>
         <div className='header'>
-            <ul className='ul'>
-                <span id="com-name">JANAAS</span>
-                <li className='li'><a href="/signin"><button className='sign-button'>Sign In</button></a></li>
-                <li className='li'><a href="/signup"><button className='sign-button sign-up'>Sign Up</button></a></li>
-                <button className='cart-button'><i class="fa-solid fa-cart-shopping"></i></button>              
-                <form class="form">
-                    <input type="text" placeholder="Search..." class="input" onChange={(event)=>HandleChange(event.target.value)}/>
-                    <button class="button">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                    <div className='search-product'>
-                       {data.map((data,i)=>(
-                        <div><Link to={data}>
-                            {data}
-                        </Link>
-                        </div>
-                       )
-                    )}
-                    </div>
-
-                </form>
-            </ul>
+            
+            <span className='title-span'>
+                <h3>Shop Ease</h3>
+            </span>
+            <div className='header-section'>    
+                <Link to="/signin"><button className='btn btn-primary signin-btn'>Sign in </button></Link>
+                <Link to="/signup"><button className='btn btn-secondary sign-btn'>Sign up</button></Link>
+            </div>
+            <div className='menu'>
+                <label for="input-checkbox">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </label>
+            </div>
+            <input type="checkbox" id='input-checkbox'/>   
+            <div className='header-mobile' >
+                
+                <span className='span-button'>
+                    <label for="input-checkbox">
+                        <Link to="/signin"><button className='btn btn-primary signin-btn sign-in' >Sign in</button></Link>
+                    </label>
+                    <label for="input-checkbox">
+                        <br/>
+                        <Link to="/signup"><button className='btn btn-secondary sign-btn sign-up'>Sign up</button></Link>
+                    </label>
+                </span>
+                        
+            </div>
+            
         </div>
     </>)
     
