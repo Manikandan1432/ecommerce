@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Footer() {
     return(<>
     <div className="footer">
@@ -7,9 +8,9 @@ function Footer() {
                 <h3 className="navAccessibility">Get Know with Us</h3>
             </div>
             <ul>
-                <li><a className="footer-a" href="">About Janaas</a></li>
-                <li><a className="footer-a" href="">Careers</a></li>
-                <li><a className="footer-a" href="">Press Releases</a></li>
+                <li><Link to="" className="footer-a">About Janaas</Link></li>
+                <li><Link to="" className="footer-a">Careers</Link></li>
+                <li><Link to="" className="footer-a">Press Releases</Link></li>
             </ul>
         </div>
         <div className="navAccessibility"></div>
@@ -18,9 +19,9 @@ function Footer() {
                 <h3 className="h3">Connect with us</h3>
             </div>
             <ul>
-                <li><a className="footer-a" href="">Facebook</a></li>
-                <li><a className="footer-a" href="">twitter</a></li>
-                <li><a className="footer-a" href="">Instagram</a></li>
+                <li><Link to="" className="footer-a">Facebook</Link></li>
+                <li><Link to="" className="footer-a">twitter</Link></li>
+                <li><Link to="" className="footer-a">Instagram</Link></li>
             </ul>
         </div>
         <div className="navAccessibility"></div>
@@ -29,13 +30,13 @@ function Footer() {
                 <h3>Make Money With Us</h3>
             </div>
             <ul>
-                <li><a className="footer-a" href="">sell on janaas</a></li>
-                <li><a className="footer-a" href="">Protect and Build your Brand</a></li>
-                <li><a className="footer-a" href="">Janaas global selling</a></li>
-                <li><a className="footer-a" href="">Supply to janaas</a></li>
-                <li><a className="footer-a" href="">Become an Affiliate</a></li>
-                <li><a className="footer-a" href="">Fullfilment by janaas</a></li>
-                <li><a className="footer-a" href="">janaas pay on Merchants</a></li>
+                <li><Link to="" className="footer-a">sell on janaas</Link></li>
+                <li><Link to="" className="footer-a">Protect and Build your Brand</Link></li>
+                <li><Link to="" className="footer-a">Janaas global selling</Link></li>
+                <li><Link to="" className="footer-a">Supply to janaas</Link></li>
+                <li><Link to="" className="footer-a">Become an Affiliate</Link></li>
+                <li><Link to="" className="footer-a">Fullfilment by janaas</Link></li>
+                <li><Link to="" className="footer-a">janaas pay on Merchants</Link></li>
             </ul>
         </div>
         <div className="navAccessibility"></div>
@@ -46,11 +47,11 @@ function Footer() {
                 </h3>
             </div>
             <ul>
-                <li><a className="footer-a" href="">your Account</a></li>
-                <li><a className="footer-a" href="">Returns Center</a></li>
-                <li><a className="footer-a" href="">Recalls and Product Safety Alerts</a></li>
-                <li><a className="footer-a" href="">100% Purchase Protection</a></li>
-                <li><a className="footer-a" href="">Help</a></li>
+                <li><Link to="" className="footer-a">your Account</Link></li>
+                <li><Link to="" className="footer-a">Returns Center</Link></li>
+                <li><Link to="" className="footer-a">Recalls and Product Safety Alerts</Link></li>
+                <li><Link to="" className="footer-a">100% Purchase Protection</Link></li>
+                <li><Link to="" className="footer-a">Help</Link></li>
             </ul>
         </div>
         </center>

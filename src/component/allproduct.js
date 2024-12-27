@@ -40,27 +40,19 @@ function AllProduct() {
   }
   return(<>
   {data?(
-    <table id="product-table">
-        <tr><th>Sn.no</th>
-        <th>image</th>
-        <th>product name</th>
-        <th>price</th>
-        <th>actions</th>
-        </tr>
-      {data.map((values)=>(
-        <tr><td >{values.id}</td> 
-        <td><img src={values.image}/></td>
-
-        <td><EditableText value={values.title} onChange={(value)=>HandleInput(values.id,'title',value)}/></td>
-
-        <td><EditableText value={values.price} onChange={(value)=>HandleInput(values.id,'price',value)}/></td>
-
-
-        <td><button className="update-button" onClick={()=>HandleUpdate(values.id)}>Update</button>
-        <button onClick={()=>DeleteProduct(values.id)} className="delete-button">Delete</button></td>
-        </tr>
-      ))}
-    </table>
+    <div className="style">
+      <table id="product-table">
+        {data.map((values)=>(
+          <tr><td >{values.id}</td> 
+          <td><img src={values.image}/></td>
+          <td><EditableText value={values.title} onChange={(value)=>HandleInput(values.id,'title',value)}/></td>
+          <td><EditableText value={values.price} onChange={(value)=>HandleInput(values.id,'price',value)}/></td>
+          <td><button className="update-button" onClick={()=>HandleUpdate(values.id)}>Update</button>
+          <button onClick={()=>DeleteProduct(values.id)} className="delete-button">Delete</button></td>
+          </tr>
+        ))}
+      </table>
+    </div>
   ):(
     <p>Loading Data...</p>
   )}
