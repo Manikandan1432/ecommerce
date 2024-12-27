@@ -92,13 +92,13 @@ a:hover{
     border-radius: 50px;
     width: 200px;
   }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .header-section{
     display: none;
     max-width: 100%;
   }
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
   .menu{
     display: none;
   }
@@ -164,13 +164,13 @@ a:hover{
   outline: none;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
   .bg-img{
     width: 100%;
     background: url(../public/images/ecommerce.webp) no-repeat center 10%;
   }  
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
   .form{
     position: absolute;
     text-align: center;
@@ -179,7 +179,7 @@ a:hover{
 }
 
 /* ----------------------------------content-page-------------------------------- */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   #main-page{
     border: 1px solid rgb(0, 238, 255);
     background-image: linear-gradient(rgb(47, 185, 228), rgb(202, 112, 230),rgb(231, 94, 197));
@@ -215,7 +215,7 @@ a:hover{
   color: black;
   outline: none;
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
   #main-page{
     border: 1px solid rgb(255, 0, 157);
     background-image: linear-gradient(rgb(255, 0, 157),rgb(0, 128, 128),rgb(0, 255, 234));
@@ -263,7 +263,7 @@ a:hover{
   outline: none;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
     
 .footer{
   background-color: #333;
@@ -295,7 +295,7 @@ li{
 /* -----------------------------footer-section------------------- */
 /* ---------------------------sign-up------------------------- */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   #signup-main{
     text-align: center;
     width: 350px;
@@ -336,7 +336,7 @@ li{
   }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
   #signup-main{
     text-align: center;
     width: 100%;
@@ -380,7 +380,7 @@ li{
 
 /* --------------------------------sign-in----------------------------- */
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
   #form{
     text-align: center;
     padding: 17% 0px;
@@ -416,7 +416,7 @@ li{
 .bg{
   background-image: linear-gradient(rgb(187, 113, 113),rgb(60, 207, 163),rgb(226, 152, 164));
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
   #form{
     text-align: center;
     padding: 10% 0px;
@@ -451,7 +451,7 @@ li{
 }
 /* ------------------------------sign-in----------------------------- */
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
   #electronics{
     display: grid;
     grid-template-columns: repeat(4,minmax(0,1fr));
@@ -483,7 +483,7 @@ li{
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
  #electronics{
   background-image: linear-gradient(rgb(28, 192, 124), rgb(204, 0, 255), rgb(153, 103, 103));
   display: grid;
@@ -509,7 +509,7 @@ li{
 
 /* --------------------------------------product--------------------------------------- */
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
   .product-img img{
     width: 100%;
     
@@ -552,7 +552,7 @@ li{
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .pro-div{
     background-color: aquamarine;
   }
@@ -583,7 +583,7 @@ li{
 
 /* -----------------------------all-products---------------------- */
 
-@media screen and (min-width: 400px){
+@media screen and (min-width: 600px){
   #product-table{
     width: 100px;
   }
@@ -620,7 +620,7 @@ li{
     color: aliceblue;
   } 
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .style{
     display: block;
     overflow-x: auto;
